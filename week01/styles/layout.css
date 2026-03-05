@@ -1,0 +1,27 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+}
+
+body {
+    grid-template-columns: auto;
+    padding: auto;
+    margin: 1rem;
+    background-color: violet;
+}
+
+h1{
+    text-align: center;
+    padding: 16px;  
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: violet;
+    padding: 1rem;
+}
