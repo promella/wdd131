@@ -1,113 +1,90 @@
-body{
-    margin:0 auto ;
-    --primary-color: grey;
-    --secondary-color: violet;
-    --accent-color: gray;
-    --heading-font: "Roboto", sans-serif;
-    
-}
 
-header span{
-    display: block;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    background-color: var(--secondary-color);
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    background:#f5f5f5;
+    }
+
+/* Header */
+
+header{
+    background:#2c587a;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 
 nav{
-    background-color: violet;
-    color: white;
-
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    justify-content:center;
-    list-style-type: none;
+    background:#333;
+    padding:10px;
 }
 
 nav a{
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    margin: 0 15px;
-    color: var(--primary-color);
+    color:white;
+    margin:0 20px;
+    text-decoration:none;
 }
 
-na ul li {
-    flex: 1;
-    text-align: center;
+/* Main */
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
-nav ul li a:hover {
-    background-color: var(--secondary-color);
-    color: white;
-    text-decoration: underline;
+h2{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-main {
-    margin: 0 auto;
-    padding: 1rem;
+/* Cards layout */
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    }
+
+/* Card styling */
+
+.cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-
-}
-.card {
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    width: 400px;
-    padding: 15px;
-    position: relative;
-    box-shadow: 0 0 5px rgba(0,0,0,0,2);
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+    padding: 20px;px;
 }
 
-.card h3 {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    margin: -15px -15px 15px -15px;
+.card{
+    background: violet;
+    color:white;
+    padding:10px;
+    border-radius:0 2px 6px rgba (0,0,0,0.2);
 }
 
+/* About section */
 
-.profile-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.about{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    }
 
+.about img{
+    width: 150px;
+    border-radius: 6px;
 }
 
-.profile img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-left: 10px;
-}
+/* Footer */
 
-.intro {
-    flex: 1;
-    margin-right;
-
-}
-.location {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-
-}
-
-.location img {
-    width:80px;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+footer{
+    background:#2c587a;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
 }
