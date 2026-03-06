@@ -1,0 +1,55 @@
+.root{
+    --primary-color: grey;
+    --secondary-color: violet;
+    --accent-color: gray;
+    --heading-font: "Roboto", sans-serif;
+}
+
+header span{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+nav{
+    background-color: var(--accent-color);
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    list-style-type: none;
+}
+
+nav a{
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+na ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+}
