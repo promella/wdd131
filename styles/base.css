@@ -1,7 +1,7 @@
 body{
     font-family: "Roboto", sans-serif;
     margin:0;
-    background:#f5f5f5;
+    background:violet;
 }
 
 /* Header */
@@ -94,7 +94,7 @@ h2{
 /* Footer */
 
 footer{
-    background:#2c587a;
+    background:violet;
     color:white;
     text-align:center;
     padding:10px;
