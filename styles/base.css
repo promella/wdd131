@@ -30,7 +30,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #7a1fa2;
+    color: black;
     text-decoration:none;
 }
 
@@ -95,7 +95,7 @@ h2{
 
 footer{
     background:violet;
-    color:white;
+    color:black;
     text-align:center;
     padding:10px;
     margin-top:20px;
