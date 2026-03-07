@@ -95,6 +95,26 @@ h1, h2{
     border-radius:6px;
 }
 
+.contact-links{
+    list-style:none;
+    padding:0;
+}
+
+.contact-links li{
+    margin:10px 0;
+}
+
+.contact-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.contact-links a:hover{
+    text-decoration:underline;
+}
+
+
 /* Footer */
 
 footer{
