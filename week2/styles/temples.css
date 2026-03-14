@@ -18,6 +18,8 @@ header{
     color:white;
 }
 
+#menu.open::before
+
 nav{
     display:flex;
     flex-direction:column;
@@ -31,7 +33,7 @@ nav{
     display:none;
 }
 
-.navigation open {
+.navigation.open{
     display:block;
 }
 
