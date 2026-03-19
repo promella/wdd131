@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Place - South Africa</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>South Africa</h1>
+</header>
+
+<!-- HERO IMAGE (Responsive) -->
+<section class="hero">
+    <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+        <img src="images/hero-small.webp" alt="South Africa landscape">
+    </picture>
+</section>
+
+<main>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About</h2>
+        <p>
+            South Africa is known for its diverse cultures, beautiful landscapes,
+            and wildlife. It is home to cities like Johannesburg and Cape Town.
+        </p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+        <h2 id="weather-heading">Weather</h2>
+        <p>Temperature: <span id="temp">8</span> °C</p>
+        <p>Wind Speed: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span></p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
