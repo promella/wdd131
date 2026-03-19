@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +16,12 @@
     <h1>South Africa</h1>
 </header>
 
-<!-- HERO IMAGE (Responsive) -->
+<!-- HERO IMAGE (Responsive WebP) -->
 <section class="hero">
     <picture>
         <source srcset="images/hero-large.webp" media="(min-width: 768px)">
-        <img src="images/landscape.jpg" alt="South Africa landscape">
+        <source srcset="images/hero-small.webp" media="(max-width: 767px)">
+        <img src="images/landscape.webp" alt="Landscape view of South Africa">
     </picture>
 </section>
 
@@ -28,15 +30,36 @@
     <!-- ABOUT -->
     <section class="about">
         <h2>About</h2>
+
         <p>
-            South Africa is known for its diverse cultures, beautiful landscapes,
-            and wildlife. It is home to cities like Johannesburg and Cape Town.
+            South Africa is a diverse and vibrant country located at the southern tip of Africa.
+            It is known for its rich cultural heritage, with 11 official languages and a mix of
+            traditions from different ethnic groups. The country is often referred to as the
+            "Rainbow Nation" because of its diversity.
         </p>
+
+        <p>
+            The country features a wide variety of landscapes, including beautiful beaches,
+            mountains, savannas, and modern cities like Johannesburg and Cape Town.
+            South Africa has a mild climate and is one of the top tourist destinations in Africa,
+            attracting visitors with its wildlife, national parks, and scenic beauty.
+        </p>
+
+        <ul>
+            <li>Capital Cities: Pretoria, Cape Town, Bloemfontein</li>
+            <li>Famous Landmark: Table Mountain</li>
+            <li>Popular Wildlife: Lions, Elephants, Rhinos</li>
+            <li>Main Industry: Mining and Tourism</li>
+        </ul>
     </section>
 
     <!-- WEATHER -->
     <section class="weather">
-        <h2 id="weather-heading">Weather</h2>
+        <h2 id="weather-heading">
+            Weather
+            <img src="images/" alt="weather icon" class="weather-icon">
+        </h2>
+
         <p>Temperature: <span id="temp">8</span> °C</p>
         <p>Wind Speed: <span id="wind">10</span> km/h</p>
         <p>Wind Chill: <span id="windChill"></span></p>
@@ -45,9 +68,10 @@
 </main>
 
 <footer>
-    <p>&copy; <span id="year"></span></p>
+    <p>&copy; <span id="year"></span> | Prominence Ncube | South Africa</p>
     <p id="lastModified"></p>
 </footer>
 
 </body>
 </html>
+```
