@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temple Album</title>
-    <meta name="description" content="A gallery of temples from around the world. Explore the beauty and diversity of these sacred structures through our collection of images.">
+
+    <meta name="description" content="Temple gallery">
     <meta name="author" content="Prominence Ncube">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <!-- JS -->
     <script src="scripts/temples-array.js" defer></script>
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <h1>Temple Album</h1>
     <button id="menu">☰</button>
-    <nav aria-label="Temple Filters">
+
+    <nav>
         <ul class="navigation">
             <li><a href="#" data-filter="all">Home</a></li>
             <li><a href="#" data-filter="old">Old</a></li>
@@ -35,13 +39,11 @@
 
 <main>
     <h2>Temple Gallery</h2>
-    <div id="temple-container" class="container">
-        <!-- Temple cards will be dynamically generated here -->
-    </div>
+    <div id="temple-container"></div>
 </main>
 
 <footer>
-    <p>© <span id="year"></span> | Prominence Ncube | South Africa</p>
+    <p>© <span id="year"></span> | Prominence Ncube</p>
     <p id="lastModified"></p>
 </footer>
 

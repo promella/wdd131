@@ -7,15 +7,16 @@ const lastModified = document.querySelector('#lastModified');
 // Mobile menu toggle
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
-    menuButton.classList.toggle('open');
 });
 
-// Render temples function
+// Render temples
 function renderTemples(templesToRender) {
-    container.innerHTML = ""; // clear existing cards
+    container.innerHTML = "";
+
     templesToRender.forEach(temple => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
+
         card.innerHTML = `
             <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
             <div class="temple-info">
@@ -25,41 +26,43 @@ function renderTemples(templesToRender) {
                 <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
             </div>
         `;
+
         container.appendChild(card);
     });
 }
 
-// Initial render (all temples)
+// Initial render
 renderTemples(temples);
 
-// Menu filtering
+// Filtering
 document.querySelectorAll('.navigation a').forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
-        const filter = link.textContent.toLowerCase();
-        let filteredTemples;
 
-        switch(filter) {
+        const filter = link.dataset.filter;
+        let filtered;
+
+        switch (filter) {
             case 'old':
-                filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+                filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
                 break;
             case 'new':
-                filteredTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+                filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
                 break;
             case 'large':
-                filteredTemples = temples.filter(t => t.area > 90000);
+                filtered = temples.filter(t => t.area > 90000);
                 break;
             case 'small':
-                filteredTemples = temples.filter(t => t.area < 10000);
+                filtered = temples.filter(t => t.area < 10000);
                 break;
             default:
-                filteredTemples = temples;
+                filtered = temples;
         }
 
-        renderTemples(filteredTemples);
+        renderTemples(filtered);
     });
 });
 
-// Footer dates
+// Footer
 year.textContent = new Date().getFullYear();
-lastModified.textContent = `Last Modified: ${new Date(document.lastModified).toDateString()}`;
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
