@@ -53,20 +53,18 @@ const temples = [
         location: "Accra, Ghana",
         dedicated: "2004-01-11",
         area: 11500,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-273999-wallpaper.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
     },
     {
         templeName: "Alabang Philippines Temple",
         location: "Alabang, Philippines",
         dedicated: "2017-11-05",
         area: 116642,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/alabang-philippines/400x250/alabang-philippines-temple-exterior-1518361-wallpaper.jpg"
-    },
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/alabang-philippines-temple/alabang-philippines-temple-65306-main.jpg"
     {
         templeName: "Tokyo Japan Temple",
         location: "Tokyo, Japan",
         dedicated: "1980-10-27",
         area: 53000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-exterior.jpg"
-    }
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
 ];
