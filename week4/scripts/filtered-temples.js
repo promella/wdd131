@@ -1,21 +1,19 @@
 const menuButton = document.querySelector('#menu');
 const nav = document.querySelector('.navigation');
 const container = document.getElementById('temple-container');
+const year = document.querySelector('#year');
+const lastModified = document.querySelector('#lastModified');
 
+// Mobile menu toggle
 menuButton.addEventListener('click', () => {
     nav.classList.toggle('open');
     menuButton.classList.toggle('open');
 });
 
-// Footer year and last modified
-document.getElementById('year').textContent = new Date().getFullYear();
-const modified = new Date(document.lastModified);
-document.getElementById('lastModified').textContent = `Last Modified: ${modified.toDateString()}`;
-
-// Function to render temples
+// Render temples function
 function renderTemples(templesToRender) {
-    container.innerHTML = ""; // clear previous content
-    templesToRender.forEach((temple) => {
+    container.innerHTML = ""; // clear existing cards
+    templesToRender.forEach(temple => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
         card.innerHTML = `
@@ -31,16 +29,15 @@ function renderTemples(templesToRender) {
     });
 }
 
-// Initial render: all temples
+// Initial render (all temples)
 renderTemples(temples);
 
-// Filtering functionality
-const filterLinks = document.querySelectorAll('.navigation a');
-filterLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
+// Menu filtering
+document.querySelectorAll('.navigation a').forEach(link => {
+    link.addEventListener('click', e => {
         e.preventDefault();
-        const filter = link.dataset.filter;
-        let filteredTemples = temples;
+        const filter = link.textContent.toLowerCase();
+        let filteredTemples;
 
         switch(filter) {
             case 'old':
@@ -55,7 +52,6 @@ filterLinks.forEach(link => {
             case 'small':
                 filteredTemples = temples.filter(t => t.area < 10000);
                 break;
-            case 'all':
             default:
                 filteredTemples = temples;
         }
@@ -63,3 +59,7 @@ filterLinks.forEach(link => {
         renderTemples(filteredTemples);
     });
 });
+
+// Footer dates
+year.textContent = new Date().getFullYear();
+lastModified.textContent = `Last Modified: ${new Date(document.lastModified).toDateString()}`;
