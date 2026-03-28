@@ -61,10 +61,12 @@ const temples = [
         dedicated: "2017-11-05",
         area: 116642,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/alabang-philippines-temple/alabang-philippines-temple-65306-main.jpg"
+    },
     {
         templeName: "Tokyo Japan Temple",
         location: "Tokyo, Japan",
         dedicated: "1980-10-27",
         area: 53000,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340-main.jpg"
+    }
 ];
