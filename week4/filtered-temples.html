@@ -6,61 +6,41 @@
     <title>Temple Album</title>
     <meta name="description" content="A gallery of temples from around the world. Explore the beauty and diversity of these sacred structures through our collection of images.">
     <meta name="author" content="Prominence Ncube">
+
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
 
-    <script src="scripts/filtered-temples.js" defer></script>
     <script src="scripts/temples-array.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
-
 <body>
 
 <header>
-
-<h2>Temple Album</h2>
-
-<button id="menu">☰</button>
-
+    <h2>Temple Album</h2>
+    <button id="menu">☰</button>
     <nav>
         <ul class="navigation open">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
+            <li><a href="#" data-filter="all">Home</a></li>
+            <li><a href="#" data-filter="old">Old</a></li>
+            <li><a href="#" data-filter="new">New</a></li>
+            <li><a href="#" data-filter="large">Large</a></li>
+            <li><a href="#" data-filter="small">Small</a></li>
         </ul>
     </nav>
-
 </header>
 
-
 <main>
-
-<h1>Temple Gallery</h1>
-
-    <div class="container">
-
-
-
+    <h1>Temple Gallery</h1>
+    <div id="temple-container" class="container">
+        <!-- Temple cards will be dynamically generated here -->
     </div>
-
 </main>
 
-
 <footer>
-
-<p>
-© <span id="year"></span> | Prominence Ncube | South Africa
-</p>
-
-<p id="lastModified"></p>
-
+    <p>© <span id="year"></span> | Prominence Ncube | South Africa</p>
+    <p id="lastModified"></p>
 </footer>
 
 </body>

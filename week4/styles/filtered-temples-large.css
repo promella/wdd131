@@ -1,20 +1,23 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-#menu{
-display:none;
+    /* Hide the mobile menu button on larger screens */
+    #menu {
+        display: none;
+    }
+
+    /* Show the navigation links horizontally */
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Add horizontal spacing between menu items */
+    .navigation li {
+        margin: 0 15px;
+    }
+
+    /* Make the temple cards appear in 3 columns */
+    #temple-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-
-.navigation{
-display:flex;
-justify-content:center;
-}
-
-.navigation li{
-margin:0 15px;
-}
-
-.container{
-grid-template-columns:repeat(3,1fr);
-}
-
-}                     
