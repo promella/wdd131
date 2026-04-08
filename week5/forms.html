@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Review</title>
+
+<link rel="stylesheet" href="css/form.css">
+<script defer src="js/form.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Product Review Form</h1>
+</header>
+
+<main>
+<form method="get" action="review.html">
+
+    <!-- Product Name -->
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+    </select>
+
+    <!-- Rating -->
+    <fieldset>
+        <legend>Overall Rating</legend>
+
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+
+    </fieldset>
+
+    <!-- Date -->
+    <label for="date">Date of Installation</label>
+    <input type="date" id="date" name="date" required>
+
+    <!-- Features -->
+    <fieldset>
+        <legend>Useful Features</legend>
+
+        <label><input type="checkbox" name="features" value="durable"> Durable</label>
+        <label><input type="checkbox" name="features" value="easy"> Easy to Use</label>
+        <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
+        <label><input type="checkbox" name="features" value="design"> Good Design</label>
+
+    </fieldset>
+
+    <!-- Review -->
+    <label for="review">Written Review</label>
+    <textarea id="review" name="review"></textarea>
+
+    <!-- Username -->
+    <label for="username">Your Name</label>
+    <input type="text" id="username" name="username">
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Review">
+
+</form>
+</main>
+
+<footer>
+    <p>&copy; 2026 | Product Review Assignment</p>
+</footer>
+
+</body>
+</html>
