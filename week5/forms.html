@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Product Review</title>
+<meta name="description" content="Submit a product review including rating, features, and feedback to help others make better decisions.">
+<meta name="author" content="Prominence Ncube">
 
 <link rel="stylesheet" href="styles/forms.css">
 <script defer src="scripts/forms.js"></script>
@@ -25,31 +27,47 @@
     </select>
 
     <!-- Rating -->
-    <fieldset>
+   <fieldset>
         <legend>Overall Rating</legend>
 
-        <label><input type="radio" name="rating" value="1" required> ☆</label>
-        <label><input type="radio" name="rating" value="2"> ☆☆</label>
-        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+        <input type="radio" id="rate1" name="rating" value="1" required>
+        <label for="rate1">☆</label>
 
-    </fieldset>
+        <input type="radio" id="rate2" name="rating" value="2" required>
+        <label for="rate2">☆☆</label>
+
+        <input type="radio" id="rate3" name="rating" value="3" required>
+        <label for="rate3">☆☆☆</label>
+
+        <input type="radio" id="rate4" name="rating" value="4" required>
+        <label for="rate4">☆☆☆☆</label>
+
+        <input type="radio" id="rate5" name="rating" value="5" required>
+        <label for="rate5">☆☆☆☆☆</label>
+
+</fieldset>
 
     <!-- Date -->
     <label for="date">Date of Installation</label>
     <input type="date" id="date" name="date" required>
 
     <!-- Features -->
-    <fieldset>
+   <fieldset>
         <legend>Useful Features</legend>
 
-        <label><input type="checkbox" name="features" value="durable"> Durable</label>
-        <label><input type="checkbox" name="features" value="easy"> Easy to Use</label>
-        <label><input type="checkbox" name="features" value="affordable"> Affordable</label>
-        <label><input type="checkbox" name="features" value="design"> Good Design</label>
+        <input type="checkbox" id="durable" name="features" value="durable">
+        <label for="durable">Durable</label>
 
-    </fieldset>
+        <input type="checkbox" id="easy" name="features" value="easy">
+        <label for="easy">Easy to Use</label>
+
+        <input type="checkbox" id="affordable" name="features" value="affordable">
+        <label for="affordable">Affordable</label>
+
+        <input type="checkbox" id="design" name="features" value="design">
+        <label for="design">Good Design</label>
+
+</fieldset>
 
     <!-- Review -->
     <label for="review">Written Review</label>
