@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us</title>
+<title>About Us | Ebenezer Aid Solutions</title>
 
 <link rel="stylesheet" href="styles/project.css">
 <script defer src="scripts/projects.js"></script> 
@@ -11,8 +11,9 @@
 
 <body>
 
-<header>
-  <h1>Ebenezer Aid Solutions</h1>
+<!-- HEADER -->
+<header class="navbar">
+  <h1 class="logo">Ebenezer Aid Solutions</h1>
 
   <!-- Menu Button -->
   <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
@@ -20,35 +21,93 @@
   <!-- Navigation -->
   <nav id="nav">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html" class="active">About</a>
     <a href="programmes.html">Programmes</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+  <img src="images/about-hero.jpg" alt="Community support and inclusion" class="hero-img">
+
+  <div class="hero-overlay">
+    <h2>About Our Organisation</h2>
+    <p>Building inclusive communities through empowerment and support</p>
+  </div>
+</section>
+
+
+<!-- MISSION -->
 <main>
-    <section>
-        <h2>Mission</h2>
-        <p>Enhancing the lives of children and persons with disabilities.</p>
-    </section>
 
-    <section>
-        <h2>Vision</h2>
-        <p>A community where people with disabilities thrive and become independent.</p>
-    </section>
+<section class="info-section">
+  <img src="images/mission.jpg" alt="Helping community mission work">
 
-    <section>
-        <h2>Values</h2>
-        <ul>
-            <li>Dignity</li>
-            <li>Empowerment</li>
-            <li>Inclusion</li>
-            <li>Sustainability</li>
-        </ul>
-    </section>
+  <div>
+    <h2>Our Mission</h2>
+    <p>
+      Enhancing the lives of children and persons with disabilities through education,
+      empowerment, and sustainable community support programs.
+    </p>
+  </div>
+</section>
+
+
+<!-- VISION -->
+<section class="info-section reverse">
+  <img src="images/vision.jpg" alt="Inclusive community vision">
+
+  <div>
+    <h2>Our Vision</h2>
+    <p>
+      A world where persons with disabilities are fully included, empowered,
+      and able to live independent and dignified lives.
+    </p>
+  </div>
+</section>
+
+
+<!-- VALUES -->
+<section class="values">
+  <h2>Our Values</h2>
+
+  <div class="value-grid">
+
+    <div class="value-card">
+      <img src="images/dignity.jpg" alt="Dignity icon">
+      <h3>Dignity</h3>
+      <p>Respecting every individual regardless of ability or background.</p>
+    </div>
+
+    <div class="value-card">
+      <img src="images/empowerment.jpg" alt="Empowerment icon">
+      <h3>Empowerment</h3>
+      <p>Helping people gain skills and confidence for independence.</p>
+    </div>
+
+    <div class="value-card">
+      <img src="images/inclusion.jpg" alt="Inclusion icon">
+      <h3>Inclusion</h3>
+      <p>Ensuring everyone is part of community life and opportunities.</p>
+    </div>
+
+    <div class="value-card">
+      <img src="images/sustainability.jpg" alt="Sustainability icon">
+      <h3>Sustainability</h3>
+      <p>Creating long-term solutions that continue to benefit communities.</p>
+    </div>
+
+  </div>
+</section>
+
 </main>
 
-<footer>
-    <p>&copy; 2026 Ebenezer Aid Solutions</p>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 Ebenezer Aid Solutions. All rights reserved.</p>
 </footer>
 
 </body>

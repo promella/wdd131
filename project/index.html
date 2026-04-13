@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ebenezer Aid Solutions</title>
 
-<!-- CSS -->
 <link rel="stylesheet" href="styles/project.css">
 
 <!-- Google Fonts -->
@@ -13,73 +12,88 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
 
-<!-- JS -->
 <script defer src="scripts/project.js"></script>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <h1>Ebenezer Aid Solutions</h1>
 
-  <!-- Menu Button -->
   <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
 
-  <!-- Navigation -->
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="programmes.html">Programmes</a>
     <a href="contact.html">Contact</a>
-    <a href="donate.html" class="btn">Donate</a>
+    <a href="donate.html" class="btn primary">Donate</a>
   </nav>
 </header>
 
+
+<!-- HERO SECTION (UPGRADED) -->
+<section class="hero">
+
+  <img 
+    src="images/community.jpg" 
+    alt="Community support and inclusion program"
+    class="hero-img"
+    loading="lazy"
+  >
+
+  <div class="hero-text">
+    <h2>Empowering Children & Persons with Disabilities</h2>
+
+    <p>
+      We provide inclusive programmes that build skills, promote independence,
+      and restore dignity in underserved communities.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn primary">Volunteer</a>
+      <a href="donate.html" class="btn secondary">Donate</a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- MISSION -->
 <main>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Empowering children and persons with disabilities</h2>
-        <p>
-            Empowering children and persons with disabilities through inclusive programmes that build skills, foster independence,
-            and restore dignity.
-        </p>
+<section class="card-section">
+  <h2>Our Mission</h2>
 
-        <!-- IMPORTANT: Add a real image -->
-        <img 
-          src="images/community.jpg" 
-          alt="Community support program" 
-          loading="lazy"
-        >
-    </section>
+  <p>
+    To enhance well-being through inclusive programmes that build independence, dignity,
+    and sustainable opportunities for children and persons with disabilities.
+  </p>
+</section>
 
-    <!-- MISSION -->
-    <section>
-        <h2>Our Mission</h2>
-        <p>
-            To enhance well-being through inclusive programmes that build independence and dignity.
-        </p>
-    </section>
 
-    <!-- GET INVOLVED -->
-    <section>
-        <h2>Get Involved</h2>
-        <p>
-            Donate or volunteer to help transform lives in rural communities.
-        </p>
+<!-- GET INVOLVED -->
+<section class="card-section highlight">
+  <h2>Get Involved</h2>
 
-        <!-- Call to action buttons -->
-        <a href="contact.html" class="btn">Volunteer</a>
-        <a href="contact.html" class="btn">Donate</a>
-    </section>
+  <p>
+    Join us in transforming lives through volunteering, partnerships, or donations.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="contact.html" class="btn primary">Volunteer</a>
+    <a href="donate.html" class="btn primary">Donate</a>
+  </div>
+</section>
 
 </main>
 
-<footer>
-    <p>&copy; 2026 Ebenezer Aid Solutions</p>
 
-    <!-- REQUIRED: References link -->
-    <a href="references.html">References</a>
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Ebenezer Aid Solutions</p>
+  <a href="references.html">References</a>
 </footer>
 
 </body>

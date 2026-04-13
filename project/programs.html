@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Programs</title>
+<title>Programs | Ebenezer Aid Solutions</title>
 
 <link rel="stylesheet" href="styles/project.css">
 <script defer src="scripts/projects.js"></script>
@@ -11,38 +11,75 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
     <h1>Our Programs</h1>
-    <button id="menu">☰</button>
+
+    <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+
     <nav id="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
+        <a href="programs.html" class="active">Programs</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<main>
-    <section>
-        <h2>Agriculture & Food Security</h2>
-        <p>Promoting sustainable farming and nutrition.</p>
-    </section>
 
-    <section>
-        <h2>Education Support</h2>
-        <p>Helping children with tutoring and literacy programs.</p>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+    <img src="images/programs-hero.jpg" alt="Community programs support" class="hero-img">
 
-    <section>
-        <h2>Vocational Training</h2>
-        <p>Developing skills for independence.</p>
-    </section>
+    <div class="hero-overlay">
+        <h2>Our Programs</h2>
+        <p>Empowering communities through sustainable development</p>
+    </div>
+</section>
 
-    <section>
-        <h2>Community Support</h2>
-        <p>Supporting caregivers and families.</p>
-    </section>
+
+<!-- PROGRAMS GRID -->
+<main class="program-grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <img src="images/agriculture.jpg" alt="Agriculture program">
+        <div class="card-content">
+            <h3>Agriculture & Food Security</h3>
+            <p>Promoting sustainable farming and improving community nutrition through local gardening initiatives.</p>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <img src="images/education.jpg" alt="Education support">
+        <div class="card-content">
+            <h3>Education Support</h3>
+            <p>Helping children with tutoring, literacy programs, and inclusive learning support.</p>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <img src="images/vocational.jpg" alt="Vocational training">
+        <div class="card-content">
+            <h3>Vocational Training</h3>
+            <p>Developing practical skills that support independence and sustainable livelihoods.</p>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <img src="images/community.jpg" alt="Community support">
+        <div class="card-content">
+            <h3>Community Support</h3>
+            <p>Supporting caregivers and families through training, resources, and empowerment programs.</p>
+        </div>
+    </div>
+
 </main>
 
+
+<!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Ebenezer Aid Solutions</p>
 </footer>
