@@ -1,50 +1,65 @@
+/* ===== GENERAL ===== */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f5f7fa;
 }
 
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* ===== HEADER ===== */
 header {
-    background-color: #2e7d32;
+    background-color: grey;
     color: white;
     text-align: center;
     padding: 1rem;
     position: relative;
 }
 
-h1, h2 {
-    font-family: 'Merriweather', serif;
+/* ===== NAVIGATION ===== */
+#nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-nav {
-    display: none;
-    flex-direction: column;
-}
-
-nav a {
+/* Nav links */
+#nav a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
 }
 
-nav a:hover {
-    background: #1b5e20;
+#nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
+/* ===== MENU BUTTON ===== */
 #menu {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
+    display: none;
+    font-size: 2rem;
     background: none;
     border: none;
     color: white;
+    cursor: pointer;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    transition: transform 0.3s ease;
 }
 
-.open {
-    display: flex;
+/* Rotate when open */
+#menu.open {
+    transform: rotate(90deg);
 }
 
+/* ===== MAIN CONTENT ===== */
 main {
     padding: 1rem;
 }
@@ -56,28 +71,67 @@ section {
     border-radius: 8px;
 }
 
+/* Hero section */
 .hero {
-    background: #f9a825;
+    background: blue;
     color: white;
     text-align: center;
+    padding: 2rem;
 }
 
+/* ===== PROGRAM CARDS ===== */
+#programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
 footer {
-    background: #2e7d32;
+    background: grey;
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+
+    /* Show menu button */
+    #menu {
+        display: block;
     }
 
-    #menu {
-        display: none;
+    /* Hide nav with animation */
+    #nav {
+        flex-direction: column;
+        align-items: center;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+
+        background: #2e7d32;
+        margin-top: 1rem;
+        border-radius: 8px;
+    }
+
+    /* When open */
+    #nav.open {
+        max-height: 300px;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 769px) {
+    #nav {
+        display: flex;
     }
 }
