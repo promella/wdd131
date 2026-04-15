@@ -11,7 +11,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Merriweather&display=swap" rel="stylesheet">
+<script>
+const menuButton = document.getElementById("menu");
+const nav = document.getElementById("nav");
 
+menuButton.addEventListener("click", () => {
+    menuButton.classList.toggle("open");
+    nav.classList.toggle("open");
+});
+</script>
 <script defer src="scripts/project.js"></script>
 </head>
 
